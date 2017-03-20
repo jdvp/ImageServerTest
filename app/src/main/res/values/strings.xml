@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">ImageServerTest</string>
+    <string name="upload">Upload image</string>
+    <string name="choose">Choose image</string>
+    <string name="choose_again">Re-pick image</string>
+    <string name="upload_affirm">Upload</string>
+    <string name="upload_cancel">Cancel</string>
+    <string name="selected_image_cd">Your selected image</string>
+    <string name="upload_failed">Upload failed. Please try again.</string>
+    <string name="name_hint">Name</string>
+    <string name="comment_hint">Your comment here…</string>
+    <string name="sending">Uploading…</string>
+
+    <string name="posted_by">Posted by &lt;font color=\"#FF0000\"&gt;%s&lt;/font&gt;</string>
+    <string name="img_caption">&lt;font color=\"#FF0000\"&gt;%1$s&lt;/font&gt; says:\n%2$s</string>
+</resources>
