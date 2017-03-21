@@ -7,10 +7,15 @@
     <string name="upload_cancel">Cancel</string>
     <string name="selected_image_cd">Your selected image</string>
     <string name="upload_failed">Upload failed. Please try again.</string>
+    <string name="comment_failed">Posting comment failed. Please try again.</string>
     <string name="name_hint">Name</string>
     <string name="comment_hint">Your comment here…</string>
     <string name="sending">Uploading…</string>
 
     <string name="posted_by">Posted by &lt;font color=\"#FF0000\"&gt;%s&lt;/font&gt;</string>
     <string name="img_caption">&lt;font color=\"#FF0000\"&gt;%1$s&lt;/font&gt; says:\n%2$s</string>
+
+    <string name="formatted_comment">&lt;font color=\"#0000FF\"&gt;%1$s:&lt;/font&gt; %2$s</string>
+    <string name="comments">Comments</string>
+    <string name="comment">Comment</string>
 </resources>

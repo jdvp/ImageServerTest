@@ -52,7 +52,7 @@ public class PostImageActivity extends InjectorActivity {
     @BindView(R.id.cancel_button)
     Button cancelButton;
 
-    @BindView(R.id.upload_button)
+    @BindView(R.id.confirm_button)
     Button uploadButton;
 
     @BindView(R.id.comment_edit_text)

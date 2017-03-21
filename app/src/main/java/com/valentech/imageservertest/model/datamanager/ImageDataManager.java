@@ -1,5 +1,6 @@
 package com.valentech.imageservertest.model.datamanager;
 
+import com.valentech.imageservertest.model.binding.Image;
 import com.valentech.imageservertest.model.binding.ImageList;
 
 import okhttp3.MultipartBody;
@@ -13,4 +14,5 @@ import rx.Observable;
 public interface ImageDataManager {
     public Observable<ImageList> getImages();
     public Observable<ImageList> postImage(MultipartBody.Part image, RequestBody name, RequestBody caption);
+    public Observable<Image> postComment(String id, String name, String comment);
 }

@@ -7,8 +7,10 @@ import com.valentech.imageservertest.model.datamanager.impl.ImageDataManagerImpl
 import com.valentech.imageservertest.service.ImageService;
 import com.valentech.imageservertest.viewmodel.MainViewModel;
 import com.valentech.imageservertest.viewmodel.PostImageViewModel;
+import com.valentech.imageservertest.viewmodel.ViewImageDetailActivityViewModel;
 import com.valentech.imageservertest.viewmodel.impl.MainViewModelImpl;
 import com.valentech.imageservertest.viewmodel.impl.PostImageViewModelImpl;
+import com.valentech.imageservertest.viewmodel.impl.ViewImageDetailActivityViewModelImpl;
 
 import javax.inject.Singleton;
 
@@ -59,5 +61,11 @@ public class ImageServerTestModule {
     @Singleton
     public PostImageViewModel providePostImageVieModel(ImageDataManager imageDataManager) {
         return new PostImageViewModelImpl(imageDataManager);
+    }
+
+    @Provides
+    @Singleton
+    public ViewImageDetailActivityViewModel provideViewImageDetailActivityViewModel(ImageDataManager imageDataManager) {
+        return new ViewImageDetailActivityViewModelImpl(imageDataManager);
     }
 }

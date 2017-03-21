@@ -4,6 +4,7 @@ import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
 import java.io.Serializable;
+import java.util.ArrayList;
 import java.util.Date;
 
 /**
@@ -31,6 +32,26 @@ public class Image implements Serializable{
     @Expose
     @SerializedName("caption")
     private String caption;
+
+    @Expose
+    @SerializedName("comments")
+    private ArrayList<Comment> comments;
+
+    public String getId() {
+        return id;
+    }
+
+    public String getImg() {
+        return img;
+    }
+
+    public Date getDate() {
+        return date;
+    }
+
+    public ArrayList<Comment> getComments() {
+        return comments;
+    }
 
     public String getUrl() {
         return img;

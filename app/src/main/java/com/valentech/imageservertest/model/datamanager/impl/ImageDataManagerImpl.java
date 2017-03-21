@@ -1,5 +1,7 @@
 package com.valentech.imageservertest.model.datamanager.impl;
 
+import com.valentech.imageservertest.model.binding.CommentRequestBody;
+import com.valentech.imageservertest.model.binding.Image;
 import com.valentech.imageservertest.model.binding.ImageList;
 import com.valentech.imageservertest.model.datamanager.ImageDataManager;
 import com.valentech.imageservertest.service.ImageService;
@@ -30,5 +32,10 @@ public class ImageDataManagerImpl implements ImageDataManager{
     @Override
     public Observable<ImageList> postImage(MultipartBody.Part image, RequestBody name, RequestBody caption) {
         return imageService.postImage(image, name, caption);
+    }
+
+    @Override
+    public Observable<Image> postComment(String id, String name, String comment) {
+        return imageService.postComment("/img/" + id, new CommentRequestBody(name, comment));
     }
 }

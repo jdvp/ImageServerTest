@@ -29,51 +29,7 @@
                 android:layout_height="wrap_content"
                 android:contentDescription="@string/selected_image_cd"/>
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
-
-                <EditText
-                    android:id="@+id/name_edit_text"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:inputType="text"
-                    android:hint="@string/name_hint"
-                    android:lines="1"/>
-
-                <EditText
-                    android:id="@+id/comment_edit_text"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:inputType="text"
-                    android:hint="@string/comment_hint"
-                    android:lines="3"/>
-
-                <LinearLayout
-                    style="?android:attr/buttonBarStyle"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
-
-                    <Button
-                        android:id="@+id/upload_button"
-                        style="?android:attr/buttonBarButtonStyle"
-                        android:layout_width="0dp"
-                        android:layout_weight="1"
-                        android:layout_height="wrap_content"
-                        android:text="@string/upload_affirm"/>
-
-                    <Button
-                        android:id="@+id/cancel_button"
-                        style="?android:attr/buttonBarButtonStyle"
-                        android:layout_width="0dp"
-                        android:layout_weight="1"
-                        android:layout_height="wrap_content"
-                        android:text="@string/upload_cancel"/>
-                </LinearLayout>
-            </LinearLayout>
+            <include layout="@layout/comment_section"/>
         </LinearLayout>
     </ScrollView>
-
 </LinearLayout>
